@@ -1,7 +1,10 @@
 # my_find_grep
 
 parallel or concurrent find grep with O_DIRECT mode for grep
+TL;DR:
 
+- grep uses a few kilobytes as buffer and reads files chunkwise, skips files if a '\0' is found and checks if the search string is at the buffer boundary
+- threads increment atomic counters to indicate if they are working and might find new directories which are the work-units the threads are working on
 
 ============== my find grep: concurrent find respectively concurrent grep ==============
 
