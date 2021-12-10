@@ -1,4 +1,5 @@
-# my_find_grep
+# my_find_grep & copy
+## parallel find, grep & copy
 
 parallel or concurrent find grep with O_DIRECT mode for grep
 TL;DR:
